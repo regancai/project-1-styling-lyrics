@@ -1,0 +1,63 @@
+html {
+  background: linear-gradient(270deg, #ffa61c, #b31cff, #ff1c6e);
+  background-size: 600% 600%;
+  -webkit-animation: gradientMod 15s ease infinite;
+  -moz-animation: gradientMod 15s ease infinite;
+  animation: gradientMod 15s ease infinite;
+}
+
+body {
+  padding:0px;
+}
+
+#particles-js {
+
+  height:2000px;
+  width: 90vw;
+  margin-top: 22vh;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30vh;
+  background-color: #222;
+}
+
+#title_digital {
+  display: inline;
+  width: inherit;
+  height: inherit;
+  text-align: center;
+  font-size: 15vw;
+  font-style: normal;
+  /*font-kerning: none;*/
+  color: #eee;
+  margin-left: 30%;
+  margin-right: 30%;
+  font-family: 'Libre Barcode 128 Text', cursive;
+}
+
+/*--- Animations ---*/
+@-webkit-keyframes gradientMod {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes gradientMod {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes gradientMod {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+@keyframes scrollExpand {
+  from{ }
+  to{ }
+}
+
+@keyframes scrollDissolve {
+  from{ }
+  to{ }
+}
