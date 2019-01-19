@@ -1,12 +1,3 @@
-/* -----------------------------------------------
-/* Author : Vincent Garreau  - vincentgarreau.com
-/* MIT license: http://opensource.org/licenses/MIT
-/* Demo / Generator : vincentgarreau.com/particles.js
-/* GitHub : github.com/VincentGarreau/particles.js
-/* How to use? : Check the GitHub README
-/* v2.0.0
-/* ----------------------------------------------- */
-
 var pJS = function(tag_id, params){
 
   var canvas_el = document.querySelector('#'+tag_id+' > .particles-js-canvas-el');
@@ -1232,7 +1223,8 @@ var pJS = function(tag_id, params){
 
   pJS.fn.vendors.drawShape = function(c, startX, startY, sideLength, sideCountNumerator, sideCountDenominator){
 
-    // By Programming Thomas - https://programmingthomas.wordpress.com/2013/04/03/n-sided-shapes/
+
+
     var sideCount = sideCountNumerator * sideCountDenominator;
     var decimalSides = sideCountNumerator / sideCountDenominator;
     var interiorAngleDegrees = (180 * (decimalSides - 2)) / decimalSides;

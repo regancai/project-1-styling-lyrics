@@ -10,15 +10,34 @@ body {
   padding:0px;
 }
 
+img {
+    max-width: 88%;
+    max-height: 100%;
+}
+
+#id-logo {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+#imageDiv {
+  padding: 0px;
+  margin: 0px;
+}
+
 #particles-js {
 
-  height:2000px;
-  width: 90vw;
-  margin-top: 22vh;
+  height:1000px;
+  width: 85vw;
+  margin-top: 10vh;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30vh;
-  background-color: #222;
+  background-image: linear-gradient(#111, rgba(255,255,255,0));
+  border-radius: 2vw;
 }
 
 #title_digital {
@@ -33,6 +52,21 @@ body {
   margin-left: 30%;
   margin-right: 30%;
   font-family: 'Libre Barcode 128 Text', cursive;
+}
+
+.perspectiveScroll {
+
+    animation-name: perspectiveScroll;
+    -webkit-animation-name: perspectiveScroll;
+
+    animation-duration: 1.5s;
+    -webkit-animation-duration: 1.5s;
+
+    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+
+    visibility: visible !important;
+
 }
 
 /*--- Animations ---*/
@@ -60,4 +94,24 @@ body {
 @keyframes scrollDissolve {
   from{ }
   to{ }
+}
+
+
+/* */
+@keyframes perspectiveScroll {
+    0% {transform: translateY(-150%);}
+    50%{transform: translateY(8%);}
+    65%{transform: translateY(-4%);}
+    80%{transform: translateY(4%);}
+    95%{transform: translateY(-2%);}
+    100% {transform: translateY(0%);}
+}
+
+@-webkit-keyframes perspectiveScroll {
+    0% {transform: translateY(-150%);}
+    50%{transform: translateY(8%);}
+    65%{transform: translateY(-4%);}
+    80%{transform: translateY(4%);}
+    95%{transform: translateY(-2%);}
+    100% {transform: translateY(0%);}
 }
